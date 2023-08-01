@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- BOX ICONS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="assets/img/fotoCarnet.jpg"  type="image/jpg">
+
+        <title>Nicolás Travaini Páez</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav_logo">Nicolás Travaini Páez</a>
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class='bx bx-home nav_icon'></i>Home
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#profile" class="nav_link">
+                                <i class='bx bx-user nav_icon'></i>Profile
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#education" class="nav_link">
+                                <i class='bx bx-book nav_icon'></i>Education
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class='bx bx-receipt nav_icon'></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#experience" class="nav_link">
+                                <i class='bx bx-briefcase-alt nav_icon'></i>Experience
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#certificate" class="nav_link">
+                                <i class='bx bx-award nav_icon'></i>Certificate
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#references" class="nav_link">
+                                <i class='bx bx-link-external nav_icon'></i>References
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!-- HOME -->
+                    <section class="home" id="home">
+                        <div class="home_containter section bd-grid">
+                            <div class="home_data bd-grid">
+                                <img src="assets/img/fotoCarnet.jpg" alt="" class="home_img center">
+                                <h1 class="home_title">Nicolás <b>Travaini Páez</b></h1>
+                                <h3 class="home_profession">Músico</h3>
+                                <!-- Button to generate and download the pdf. Available for desktop. -->
+                                <div>
+                                    <a href="assets/pdf/Nicolás-Travaini-Páez-Resume.jpg" download="" class="home_button-movil">Download</a>
+                                </div>
+                            </div>
+                            <div class="home_address bd-grid">
+                                <span class="home_information">
+                                    <i class="bx bx-map"> &nbsp; </i> Córdoba, Argentina 
+                                </span>
+                                <span class="home_information">
+                                    <i class="bx bx-envelope"> &nbsp; </i> nicotravaini@gmail.com
+                                </span>
+                                <span class="home_information">
+                                    <i class="bx bx-phone"> &nbsp; </i> +54 (351) 512-6836
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Theme change button -->
+                        <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                        <!-- Button to generate and download the pdf. Available for desktop -->
+                        <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                    </section>          
+                    
+                    <!-- SOCIAL -->
+                    <section class="social section">
+                        <h2 class="section-title">REDES SOCIALES</h2>
+                        <div class="social_container bd-grid">
+                            <a href="https://www.linkedin.com/in/nicotravaini/" target="_blank" class="social_link">
+                                <i class="bx bxl-linkedin-square social_icon"></i> @nicotravaini
+                            </a>
+                            <a href="https://github.com/nicotravaini/" target="_blank" class="social_link">
+                                <i class="bx bxl-github social_icon"></i> @nicotravaini
+                            </a>
+                            <a href="https://instagram.com/nipotravaini" target="_blank" class="social_link">
+                                <i class="bx bxl-instagram social_icon"></i> @nipotravaini
+                            </a>
+                        </div>
+                    </section>
+                    <!-- PROFILE -->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Perfil</h2>
+                        <p class="profile_description">
+                            Soy una persona muy detallista, me encanta aprender cosas nuevas y cumplir con las metas y desafíos que me propongo. Me gusta trabajar en proyectos que me hagan crecer humana y profesionalmente.
+                        </p>
+                    </section>
+                    
+                    <!-- EDUCATION -->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Educación</h2>
+                        <div class="education_container bd-grid">
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_rounder"></span>
+                                    <span class="education_line"></span>
+                                </div>
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">Tecnicatura en Bajo Eléctrico</h3>
+                                    <span class="education_studies">La Colmena Escuela de Música, Córdoba, Argentina</span>
+                                    <span class="education_year">2011 - 2016</span>
+                                </div>
+                            </div>
+                            <!-- <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_rounder"></span>
+                                    <span class="education_line"></span>
+                                </div>
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">FACULTY OF SCIENCE</h3>
+                                    <span class="education_studies">Leeds College Peshawar</span>
+                                    <span class="education_year">2014 - 2016</span>
+                                </div>
+                            </div> -->
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_rounder"></span>
+                                    <!-- <span class="education_line"></span> -->
+                                </div>
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">Secundario con Orientación en Educación Musical</h3>
+                                    <span class="education_studies">Collegium CEIM, Córdoba, Argentina</span>
+                                    <span class="education_year">2007 - 2009</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- SKILLS  -->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Habilidades</h2>
+                        <div class="skills_content bd-grid">
+                            <ul class="skills_data">
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span> Bajo Eléctrico
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span> Contrabajo
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span> Ableton
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span> Sibelius
+                                </li>
+                            </ul>
+                            <ul class="skills_data">
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span>JAVASCRIPT
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span>HTML
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span>CSS
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span>GIT
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="resume__right">
+                    <!-- EXPERIENCE -->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experiencias</h2>
+                        <div class="experience_container bd-grid">
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <span class="experience_line"></span>
+                                </div>
+                                <div class="experience_data bd-grid">
+                                    <h3 class="experience_title">MONADA</h3>
+                                    <span class="experience_company">Octubre 2021 - Actualidad | <a href="https://instagram.com/monada_hermanosninci">MONADA</a> </span>
+                                    <p class="experience_description">
+                                        Desde el año 2021, participo como <b>Bajista</b> en <a href="https://instagram.com/monada_hermanosninci">Monada</a>. Realizando más de 200 shows al año, viajando por todo el país. Así también formando parte del equipo de producción y sello discográfico de la banda, a cargo de los lanzamientos de sus dos últimos discos de estudio.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <!-- <span class="experience_line"></span> -->
+                                </div>
+                                <div class="experience_data bd-grid">
+                                    <h3 class="experience_title">BAJISTA Y PRODUCTOR INDEPENDIENTE</h3>
+                                    <span class="experience_company">Mayo 2006 - Octubre 2021 | </span>
+                                    <p class="experience_description">
+                                        Durante más de 15 años he participado como bajista y productor de eventos y grabaciones, viajando por todo el país con distintas bandas como miembro y músico sesionista de variados estilos. Aquí se pueden escuchar algunos de mis trabajos <a href="https://open.spotify.com/playlist/0hvf8CYs0EPs13Cj0cCYDr?si=178af12b2ca24d52">PLAYLIST DE SPOTIFY</a>  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- CERTIFICATES -->
+                    <section class="certificate section" id="certificate">
+                        <h2 class="section-title">Certificados</h2>
+                        <div class="certificate_container bd-grid">
+                            <div class="certificate_content">
+                                <h3 class="certificate_title">Introducción a la programación en Python I: Aprendiendo a programar con Python - 2021</h3>
+                                <p class="certificate_description">
+                                    He realizado un curso de introducción a Python en Coursera, bajo la dirección de la Pontificia Universidad Católica de Chile.
+                                </p>
+                            </div>
+                            <div class="certificate_content">
+                                <h3 class="certificate_title">SeProgramar - 2023</h3>
+                                <p class="certificate_description">
+                                    He realizado el curso SeProgramar en el marco de Argentina Programa 4.0, bajo la dirección del INTI, la Secretaría de Economía del Conocimiento y el Ministerio de Economía de Argentina.
+                                </p>
+                            </div>
+                            <div class="certificate_content">
+                                <h3 class="certificate_title">Programación
+                                    Imperativa en Javascript - 2023</h3>
+                                <p class="certificate_description">
+                                    He completado el tramo de Programació Imperativa en Javascript del trayecto formativo Introducción a la Programación Web front-end en la Facultad de Matemática Astronomía Física y Computación - UNC en el marco de Argentina Programa 4.0
+                                </p>
+                        </div>
+                    </section>
+                    <!-- REFERENCES -->
+                    <section class="references section" id="references">
+                        <h2 class="section-title">Referencias</h2>
+                        <div class="references_container bd-grid">
+                            <div class="references_content bd-grid">
+                                <span class="references_subtitle">CEO IT-Artificer</span>
+                                <h3 class="references_title">Mr. Haider Ali</h3>
+                                <ul class="references_contact">
+                                    <li>Phone:  +92-333-9296314</li>
+                                    <li>Email:  thehaider@yahoo.com</li>
+                                </ul>
+                            </div>
+                            <div class="references_content bd-grid">
+                                <span class="references_subtitle">Professor</span>
+                                <h3 class="references_title">Dr. Irshad Ahmad</h3>
+                                <ul class="references_contact">
+                                    <li>Phone:  091-9222258</li>
+                                    <li>Email:  Irshad.ahmad@icp.edu.pk</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- LANGUAGES -->
+                    <section class="languages section">
+                        <h2 class="section-title">Lenguajes</h2>
+                        <div class="languages_container">
+                            <ul class="languages_content bd-grid">
+                                <li class="languages_name">
+                                    <span class="languages_circle"></span> Español
+                                </li>
+                                <li class="languages_name">
+                                    <span class="languages_circle"></span> Inglés
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                    <!-- INTERESTS -->
+                    <section class="interests section">
+                        <h2 class="section-title">Interests</h2>
+                        <div class="interests_container bd-grid">
+                            <div class="interests_content">
+                                <i class='bx bx-code-alt interests_icon'></i>
+                                <span class="interests_name">Programación</span>
+                            </div>
+                            <div class="interests_content">
+                                <i class='bx bxs-coffee-togo interests_icon' ></i>
+                                <span class="interests_name">Café</span>
+                            </div>
+                            <div class="interests_content">
+                                <i class="bx bxs-plane-alt interests_icon"></i>
+                                <span class="interests_name">Viajar</span>
+                            </div>
+                            <div class="interests_content">
+                                <i class="bx bxs-music interests_icon "></i>
+                                <span class="interests_name">Música</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>        
+        </main> 
+
+        <!-- SCROLL TOP -->
+            <a href="#" class="scrolltop" id="scrolltop">
+                <i class="bx bx-up-arrow-alt scrolltop_icon"></i>
+            </a>
+
+        <!-- HTML2PDF -->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
+        
+        <!-- MAIN JS -->
+        <script src="assets/js/main.js"></script>
+    </body> <br>
+</html>
