@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CALCULADORA</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Calculadora Simple</h1>
+        <h2>Esta calculadora permite calcular números de hasta 4 dígitos,</h2>
+        <h2 id="subtexto">sumando, restando, multiplicando o diviendo los valores.</h2>
+        <div class="divGeneral">
+            <!-- Input donde se ingresa el primer número a operar-->
+            <input class="textElements" type="text" id="numero1" placeholder="Ingresa un numero" maxlength="4">
+            <!-- Este select nos permite elegir una de las operacions que deseamos realizar-->
+            <select class="textElements" name="operaciones" id="operaciones">
+                <option disabled selected>Elige una operación</option>
+                <option class="textElements" value="sumar">(+)Sumar</option>
+                <option class="textElements" value="restar">(-)Restar</option>
+                <option class="textElements" value="multiplicar">(*)Multiplicar</option>
+                <option class="textElements" value="dividir">(/)Dividir</option>
+            </select>
+            <br>
+            <!-- Input donde ingresa el segundo número a operar-->
+            <input class="textElements" type="text" id="numero2" placeholder="Ingresa otro numero" maxlength="4">
+            <!-- Este botón llama a la función calcular y hace la operación solicitada-->
+            <button type="submit" class="textElements" id="boton" onclick="calcular()">Calcular</button>
+            <!-- Este botón llama a la función borrar y resetea los inputs-->
+            <button type="reset" class="textElements" id="boton2" onclick="borrar()">Borrar</button>
+            <!--Este párrafo nos muestra el resultado-->
+            <p class="textElements" id="resultado">RESULTADO</p>
+        </div>
+    </main>
+</body>
+
+</html
