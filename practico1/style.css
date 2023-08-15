@@ -1,0 +1,67 @@
+/* Esta primer parte del código da forma al fondo y al título y subtítulo*/
+main{
+    margin-top: 100px;
+}
+body{
+    background-color: rgb(000, 080, 255, 0.5);
+    align-items: center;
+    text-align: center;
+
+}
+h1{
+    background-color: aliceblue;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 12px;
+    width: 300px;
+    position: relative;
+    left: 40%;
+    right: 40%;
+}
+#subtexto{
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+/* La clase divGeneral se encarga de dar forma, color y ubicación 
+al fonde de la calculadora */
+.divGeneral{
+    background-color: aqua;
+    border: 5px solid black;
+    border-radius: 102px;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+}
+
+/* La clase textElements le da formato a toda la parte interactiva 
+de la calculadora */
+.textElements{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(255, 255, 255);
+    border-radius: 12px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Todo lo que sigue acá abajo son especificaciones particulares
+que necesitaba en algunos elementos específicos */
+#resultado{
+    border: medium outset grey;
+    margin: 10px 50px;
+}
+#boton {
+    background-color: rgb(1, 130, 1);
+    border: medium outset;
+    margin-bottom: 30px;
+}
+#boton2 {
+    background-color: rgb(200, 1, 1);
+    border: medium outset;
+    margin-bottom: 30px;
+}
+#numero1{
+    margin-top: 20%;
+}
