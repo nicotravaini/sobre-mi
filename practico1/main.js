@@ -1,6 +1,6 @@
 // Esta función retorna los números ingresados por el usuario
 function numero(numero) {
-    return parseFloat(document.getElementById(numero).value);
+    return Number(document.getElementById(numero).value);
 }
 
 // Esta función retorna la operación elegida por el usuario
@@ -16,6 +16,12 @@ function calcular() {
     let resultado;
     if (isNaN(num1) || isNaN(num2)) {
         alert("El valor tiene que ser numerico");
+        return "";
+    } else if(operaciones == "dividir" && num2 == 0){
+        alert("No se puede dividir por cero");
+    } else if(operaciones != "sumar" && operaciones != "restar" 
+        && operaciones != "multiplicar" && operaciones != "dividir"){
+        alert("Tienes que elegir una operación")
         return "";
     } else {
         switch (operaciones) {
@@ -33,12 +39,17 @@ function calcular() {
                 break;
         }
     }
-    document.getElementById("resultado").innerHTML = resultado;
+    if(resultado.toString().length > 12){
+        alert("El resultado es muy largo");
+    } else {
+        document.getElementById("resultado").innerHTML = resultado.toFixed();
+    }
+    
 }
 
 // Esta función resetea los datos ingresados
 function borrar(){
     document.getElementById("numero1").value = "";
     document.getElementById("numero2").value = "";
-    document.getElementById("operaciones").value ="";
+    document.getElementById("operaciones").value = "";
 }
