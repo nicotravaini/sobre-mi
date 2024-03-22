@@ -6,7 +6,13 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
+html{
+    scroll-behavior: smooth;
+}
+span{
+    color: #ffa1d0;
+}
+#section1{
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     background: url("PinkNeon.jpg")center / cover no-repeat;
@@ -153,6 +159,21 @@ header{
     }
 }
 
+/* PRUEBA DE SECTION */
+
+#section2, #section3{
+    background: black;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section3{
+    background: #202020;
+}
 /* button{
     background-color: rgb(55, 157, 167);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
