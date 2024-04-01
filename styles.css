@@ -127,6 +127,14 @@ header{
         display: block;
     }
 
+    .section2{
+        flex-flow: column nowrap;
+    }
+    .columpeando{
+        width: 30%;
+        height: 70%;
+    }
+
     header{
         background: rgba(0, 0, 0, 0.5);
     }
@@ -161,7 +169,7 @@ header{
 
 /* PRUEBA DE SECTION */
 
-#section2, #section3{
+#section2, #section3, #section4, #section5{
     background: black;
     height: 100vh;
     color: white;
@@ -171,28 +179,10 @@ header{
     justify-content: center;
 }
 
-#section3{
+#section2{
+    flex-flow: row nowrap;
+}
+
+#section3, #section5{
     background: #202020;
 }
-/* button{
-    background-color: rgb(55, 157, 167);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    display: inline-block;
-    padding: 8px 20px;
-    text-align: center;
-}
-.button {
-    background-color: black;
-    border-style: solid;
-    font-size: 16px;
-    padding: 15px 32px;
-    color:aliceblue;
-    margin: 4px 2px;
-    text-align: center;
-    display: inline-block;
-}
-.button:hover {
-    background-color: aliceblue;
-    color: black;
-} */

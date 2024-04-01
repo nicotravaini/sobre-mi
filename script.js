@@ -25,9 +25,18 @@ navlist.forEach(item =>{
 })
 
 // active hamburger menu
+
 let list = document.querySelector(".navlist")
 let menuIcon = document.querySelector(".menuIcon");
 menuIcon.addEventListener("click",()=>{
     menuIcon.classList.toggle("active");
-    list.classList.toggle("activeMenu")
+    list.classList.toggle("activeMenu");
+})
+
+let menuColapse = document.querySelectorAll(".sections");
+menuColapse.forEach((element) => {
+    element.onclick = function () {
+        menuIcon.classList.toggle("active");
+        list.classList.toggle("activeMenu");
+    }
 })
