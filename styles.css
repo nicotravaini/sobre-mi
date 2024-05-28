@@ -1,49 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-span{
+
+span {
     color: #ffa1d0;
 }
-#section1{
+
+#section1 {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     background: url("PinkNeon.jpg")center / cover no-repeat;
 }
-header{
+
+header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     padding: 20px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    /* background: white; */
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
 }
-.logo{
+
+.logo {
     color: #fff;
     font-weight: 700;
     font-size: 1.8rem;
 }
-.navlist{
+
+.navlist {
     position: relative;
     display: flex;
 }
 
-.navlist li{
+.navlist li {
     list-style: none;
     margin-left: 2rem;
 }
-.navlist li a{
+
+.navlist li a {
     display: flex;
     color: #fff;
     position: relative;
@@ -52,21 +59,21 @@ header{
     text-shadow: rgb(255, 0, 255)1px 0px 10px;
 }
 
-.navlist li a span{
+.navlist li a span {
     position: relative;
     transition: .5s;
     overflow: hidden;
 }
 
-.navlist li a span .up{
+.navlist li a span .up {
     display: inline-flex;
 }
 
-.navlist li a:hover span .up{
+.navlist li a:hover span .up {
     transform: translateY(100%);
 }
 
-.navlist li a span .down{
+.navlist li a span .down {
     position: absolute;
     color: #f4a1ff;
     text-shadow: rgb(255, 0, 255)1px 0px 10px;
@@ -74,13 +81,13 @@ header{
     transform: translateY(-100%);
 }
 
-.navlist li a:hover span .down{
+.navlist li a:hover span .down {
     transform: translateY(0);
 }
 
 /* hamburger menu*/
 
-.menuIcon{
+.menuIcon {
     position: relative;
     display: block;
     width: 30px;
@@ -92,7 +99,7 @@ header{
 
 .menuIcon .bar,
 .menuIcon::after,
-.menuIcon::before{
+.menuIcon::before {
     content: "";
     display: block;
     width: 100%;
@@ -103,43 +110,143 @@ header{
     transition: .4s;
 }
 
-.menuIcon.active::before{
+.menuIcon.active::before {
     transform: rotate(-45deg) translate(-6px, 5px);
 }
 
-.menuIcon.active::after{
+.menuIcon.active::after {
     transform: rotate(45deg) translate(-6px, -6px);
 }
 
-.menuIcon.active .bar{
+.menuIcon.active .bar {
     opacity: 0;
 }
 
+
+/* PRUEBA DE SECTION */
+
+#section3,
+#section4 {
+    background:rgba(0,0,0,0.9);
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2Container{
+    background: rgba(0,0,0,0.9);
+    height: 100vh;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section2der{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+a{
+    color: #ffa1d0;
+}
+
+#section3,
+#section5 {
+    background: #202020;
+}
+
+.contactContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contactLeftTitle h2{
+    font-weight: 600;
+    color: #ffa1d0;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contactLeftTitle hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #ffa1d0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contactInputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #202020;
+    border-radius: 50px;
+}
+
+.contactLeft textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contactInputs:focus{
+    border: 2px solid #f4a1ff;
+}
+
+.contactInputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contactLeft button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ffa1d0, #f4a1ff);
+    cursor: pointer;
+}
+
 /* Break Points */
-@media(max-width:992px){
-    header{
+@media(max-width:992px) {
+    header {
         padding: 20px 4%;
     }
 }
 
-@media(max-width:768px){
-    .menuIcon{
+@media(max-width:900px) {
+    .menuIcon {
         display: block;
     }
 
-    .section2{
-        flex-flow: column nowrap;
-    }
-    .columpeando{
-        width: 30%;
-        height: 70%;
-    }
-
-    header{
+    header {
         background: rgba(0, 0, 0, 0.5);
     }
 
-    .navlist{
+    .navlist {
         position: absolute;
         top: 100%;
         left: 0;
@@ -151,38 +258,44 @@ header{
         overflow: hidden;
     }
 
-    .navlist li a{
+    .navlist li a {
         display: block;
         text-align: center;
         margin: 1.5rem 0;
         overflow: hidden;
     }
 
-    .navlist li{
+    .navlist li {
         margin: 0;
     }
 
-    .navlist.activeMenu{
+    .navlist.activeMenu {
         height: 17rem;
+    }
+
+    .contactInputs{
+        width: 80vw;
+    }
+
+    .contactRight{
+        display: none;
+    }
+
+    .section2izq{
+        display: none;
     }
 }
 
-/* PRUEBA DE SECTION */
+/* 24/05/24 - Agregué cambios en section2 copiando el código de la sección 5 (.contactContainer) para mejorar
+la división de la sección 2 entre texto e imagen.
+Section 2 falta escribir un "about me" !!
+la section 5 está lista, falta lograr que los campos queden en blanco después de mandar el mensaje
+definir ideas para sections 3 y 4 
 
-#section2, #section3, #section4, #section5{
-    background: black;
-    height: 100vh;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#section2{
-    flex-flow: row nowrap;
-}
-
-#section3, #section5{
-    background: #202020;
-}
+27/05/24 - Agregué el texto del about me con el link para abrir la playlist de spotify y en contact hice que
+se resetearan los inputs. 
+- Hacer que no vaya a la página del web3form y muestre solamente un cartelito o algo
+- En la versión responsive que las fotos pasen al fondo difuminadas, en vez de desaparecer por completo.
+- Qué puedo hacer con el gallery y el services?
+- Cómo cambiar de idiomas la página entre español e inglés y posiblemente francés.
+- el about me podría hablar de que soy argentino viviendo en París.
