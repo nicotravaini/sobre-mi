@@ -22,6 +22,7 @@ span {
 }
 
 header {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
 
 .logo {
@@ -127,7 +128,7 @@ header {
 
 #section3,
 #section4 {
-    background:rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     height: 100vh;
     color: white;
     text-align: center;
@@ -136,25 +137,36 @@ header {
     justify-content: center;
 }
 
-.section2Container{
-    background: rgba(0,0,0,0.9);
+.section2Container {
+    background: rgba(0, 0, 0, 0.9);
     height: 100vh;
     color: white;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.section2der{
+.section2der {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 20px;
 }
 
-a{
+.section2izq{
+    display: flex;
+    height: 90%;
+}
+
+.imgResponsive{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.links {
     color: #ffa1d0;
+    text-decoration: underline;
 }
 
 #section3,
@@ -176,14 +188,14 @@ a{
     gap: 20px;
 }
 
-.contactLeftTitle h2{
+.contactLeftTitle h2 {
     font-weight: 600;
     color: #ffa1d0;
     font-size: 40px;
     margin-bottom: 5px;
 }
 
-.contactLeftTitle hr{
+.contactLeftTitle hr {
     border: none;
     width: 120px;
     height: 5px;
@@ -201,6 +213,7 @@ a{
     font-weight: 500;
     color: #202020;
     border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contactLeft textarea {
@@ -209,15 +222,15 @@ a{
     border-radius: 20px;
 }
 
-.contactInputs:focus{
+.contactInputs:focus {
     border: 2px solid #f4a1ff;
 }
 
-.contactInputs::placeholder{
+.contactInputs::placeholder {
     color: #a9a9a9;
 }
 
-.contactLeft button{
+.contactLeft button {
     display: flex;
     align-items: center;
     padding: 15px 30px;
@@ -228,6 +241,20 @@ a{
     border-radius: 50px;
     background: linear-gradient(270deg, #ffa1d0, #f4a1ff);
     cursor: pointer;
+}
+
+#submitBtn:hover {
+    background: linear-gradient(270deg, #f7a1c6, #ffa1dd);
+}
+
+#submitBtn:active {
+    background: linear-gradient(270deg, #ffb1d5, #f5b1ff);
+    transform: scale(0.98);
+}
+
+#result {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Break Points */
@@ -273,16 +300,29 @@ a{
         height: 17rem;
     }
 
-    .contactInputs{
+    .contactInputs {
         width: 80vw;
     }
 
-    .contactRight{
+    .contactRight {
         display: none;
     }
 
-    .section2izq{
-        display: none;
+    .section2Container{
+        justify-content: center;
+    }
+
+    .section2izq {
+        position: absolute;
+        filter: blur(2px);
+        transition: filter 1s;
+        align-items: center;
+    }
+
+    .section2der {
+        position: absolute;
+        background-color: rgba(32, 32, 32, 0.3);
+        max-width: 80vw;
     }
 }
 
@@ -294,8 +334,22 @@ definir ideas para sections 3 y 4
 
 27/05/24 - Agregué el texto del about me con el link para abrir la playlist de spotify y en contact hice que
 se resetearan los inputs. 
-- Hacer que no vaya a la página del web3form y muestre solamente un cartelito o algo
+- Hacer que no vaya a la página del web3form y muestre solamente un cartelito o algo (OK plus efecto botón)
 - En la versión responsive que las fotos pasen al fondo difuminadas, en vez de desaparecer por completo.
 - Qué puedo hacer con el gallery y el services?
 - Cómo cambiar de idiomas la página entre español e inglés y posiblemente francés.
 - el about me podría hablar de que soy argentino viviendo en París.
+- Texto del about en responsive debería achicarse (OK)
+
+05/06/24 - Logré que la foto del about pase a estar detrás del texto difuminada pero ahora tanto imagen
+como texto tapan el header.
+- Solucionado el tema del header y el "About" quedó listo en el formato responsive, ahora falta hacer lo mismo
+para el "Contact"
+
+Tareas al 05/06/24
+- Qué puedo hacer con el gallery y el services?
+Gallery puede ser una galería de fotos que se puedan ir desplazando de costado
+Services puede ser algo como lessons tal vez
+- Cómo cambiar de idiomas la página entre español e inglés y posiblemente francés.
+- Cambiar el logo de nipo por mi firma
+- glassmorfismo para la section 2

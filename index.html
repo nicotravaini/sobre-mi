@@ -30,15 +30,16 @@
     <div id="section2">
         <div class="section2Container">
             <div class="section2izq">
-                <img src="img/Rockin.jpg" id="columpeando">
+                <img src="img/Aeroposta.jpg" class="imgResponsive">
             </div>
             <div class="section2der">
-                <h2>Hi there! My name is <span>Nico Travaini</span>, 
+                <h2>Hi there! My name is <span>Nico Travaini</span>,
+                    <br>I'm an argentinian bassist living in Paris. 
                     <br>I've been a musician for over 20 years now, 
                     <br>playing electric bass in different projects 
                     <br>as a member and also as a sideman.
                     <br>You can listen all the music where 
-                    <br>I've participated on this <a href="https://open.spotify.com/playlist/0hvf8CYs0EPs13Cj0cCYDr?si=ba65bc46eb1d4e9a" target="_blank" rel="noopener noreferr">playlist</a></h2>
+                    <br>I've participated on this <a class="links" href="https://open.spotify.com/playlist/0hvf8CYs0EPs13Cj0cCYDr?si=ba65bc46eb1d4e9a" target="_blank" rel="noopener noreferr">playlist</a></h2>
             </div>
         </div>
     </div>
@@ -53,23 +54,27 @@
 
     <div id="section5">
         <div class="contactContainer">
-            <form id="form" action="https://api.web3forms.com/submit" method="POST" class="contactLeft">
+            <form method="POST" id="form" class="contactLeft">
+                <input type="hidden" name="access_key" value="8d54e074-0a1f-4466-a376-3e38126186d1">
+                <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+            
                 <div class="contactLeftTitle">
                     <h2>Get in touch</h2>
                     <hr>
                 </div>
-                <input type="hidden" name="access_key" value="8d54e074-0a1f-4466-a376-3e38126186d1">
                 <input type="text" name="name" placeholder="Your Name" class="contactInputs" required>
                 <input type="email" name="email" placeholder="Your Email" class="contactInputs" required>
                 <textarea name="message" placeholder="Your Message" class="contactInputs" required></textarea>
-                <button type="submit">Submit <img src="" alt=""></button>
+                <button id="submitBtn" type="submit">Submit <img src="" alt=""></button>
+
+                <div id="result"></div>
             </form>
             <div class="contactRight">
-                <img src="img/ColumpeandoRock.jpg" alt="" width="">
+                <img src="img/ColumpeandoRock.jpg" class="imgResponsive">
             </div>
         </div>
-
-        <!-- <h2>This will be the <span>Contact</span> section</h2> -->
     </div>
 
 
